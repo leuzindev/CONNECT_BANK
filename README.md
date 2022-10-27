@@ -28,6 +28,7 @@ antes da codificação foi feito a criação de todas as telas no Figma, ferrame
 - Sistema de Login
 - Sistema de Cadastro
 - Sistema de PIX
+- Dark Mode Theme
 - Deleção de Conta
 - Transferencia de Dinheiro Ficticio 
 - Listagem de Translações
