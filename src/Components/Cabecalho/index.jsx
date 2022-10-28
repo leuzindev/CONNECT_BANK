@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import bank_logo from "../../assets/images/bank_logo.svg";
+import logo_nav from "../../assets/images/logo_nav.png"
 import { corPrimaria } from "../UI/variaveis";
 
 const BtnCabecalho = styled.a`
@@ -13,6 +13,10 @@ const BtnCabecalho = styled.a`
 
   background: ${(props) => (props.primary ? "white" : corPrimaria)};
   color: ${(props) => (props.primary ? corPrimaria : "white")};
+  @media(max-width: 785px){
+    display: none;
+  }
+
 `;
 
 const StyledCabecalho = styled.nav`
@@ -22,17 +26,23 @@ const StyledCabecalho = styled.nav`
   padding: 0 15vw;
   height: 10vh;
   align-items: center;
+  @media(max-width: 785px){
+    justify-content: center;
+ 
+  }
 `;
 
 const Logo = styled.img`
-  height: 50px;
-  width: 50px;
+  @media(max-width: 650px){
+    width: 250px;
+ 
+  }
 `;
 
 const Cabecalho = () => {
   return (
     <StyledCabecalho>
-      <Logo src={bank_logo} alt="Logo Smart Bank" />
+      <Logo src={logo_nav} alt="Logo Smart Bank" />
       <div>
         <BtnCabecalho primary href="https://google.com">
           Ajuda

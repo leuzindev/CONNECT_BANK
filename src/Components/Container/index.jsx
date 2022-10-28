@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Titulo from "../Titulo";
 import Conta from "../Conta";
 import Extrato from "../Extrato";
+import Quadrado_Pix  from "../Quadrado_Pix/Quadrado_Pix";
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.body};
@@ -22,14 +23,23 @@ const Conteudo = styled.section`
   }
 `;
 
+const Bloco_Pix = styled.div`
+  
+  display: flex;
+  flex-direction: column;
+`
+
 export default () => {
   return (
     <Container>
       <Titulo>Olá Fulano!</Titulo>
-      <Conteudo>
-        <Conta />
-        <Extrato />
-      </Conteudo>
+      <Bloco_Pix>
+        <Conteudo>
+          <Conta />
+          <Extrato />
+        </Conteudo>
+        <Quadrado_Pix />
+      </Bloco_Pix>
     </Container>
   );
 };
