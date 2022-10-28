@@ -13,13 +13,13 @@ import {
   Saldo,
   Detalhe,
   IconeTema,
-} from "../../Components/UI";
+} from "../UI";
 
 const IconeMargin = styled(Icone)`
   margin-top: 2px;
 `;
 
-const Conta = () => {
+const Conta_pix = () => {
   const [toggleState, untoggle] = useState(true);
 
   const toggleHandler = () => {
@@ -27,7 +27,7 @@ const Conta = () => {
   };
 
   return (
-    <Box>
+    <Box_pix>
       <h2>Conta</h2>
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
@@ -47,8 +47,8 @@ const Conta = () => {
           alt="Privacidade do Saldo"
         />
       </Botao>
-    </Box>
+    </Box_pix>
   );
 };
 
-export default Conta;
+export default Conta_pix;

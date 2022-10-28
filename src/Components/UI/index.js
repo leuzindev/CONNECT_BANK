@@ -25,6 +25,20 @@ export const Box = styled.div`
   }
 `;
 
+export const Box_pix = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
+  padding: 20px;
+  width: 100%;
+  height: 500px;
+  
+ 
+  
+`;
 export const Botao = styled.button`
   margin: 15px auto 0px auto;
   display: block;

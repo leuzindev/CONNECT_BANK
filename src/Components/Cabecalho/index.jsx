@@ -24,7 +24,7 @@ const StyledCabecalho = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 0 15vw;
-  height: 10vh;
+  height: 7vh;
   align-items: center;
   @media(max-width: 785px){
     justify-content: center;
@@ -33,6 +33,7 @@ const StyledCabecalho = styled.nav`
 `;
 
 const Logo = styled.img`
+  width: 280px;
   @media(max-width: 650px){
     width: 250px;
  

@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Koulen&display=swap');
+
+input, textarea{
+    padding-left: 20px;
+    
+}

@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import bank_logo from '../../assets/images/logo_nav.png'
 
 const QuadradoLogin = styled.div`
     margin: 30px;
-    background-color: #41d3be;
+ 
     height: 700px;
     width: 600px;
     border-radius: 20px;
@@ -48,7 +49,11 @@ const Inputs_login = styled.input`
     font-weight: bold;
     &::placeholder{
         font-size: 15px;
-        padding-left: 15px;
+        
+    }
+    @media (max-width: 550px){
+        width: 90%;
+        margin: 20px;
     }
     
 `
@@ -60,7 +65,7 @@ const Bloco_Btn = styled.div`
 `
 
 const Button_Login = styled.button`
-    background-color: #3AA0E0;
+    background-color: #007862;
     height: 56px;
     width: 200px;
     outline: none;
@@ -70,6 +75,9 @@ const Button_Login = styled.button`
     margin: 10px;
     cursor: pointer;
     font-family: 'Jockey One', sans-serif;
+    @media (max-width: 550px){
+        width: 35%;
+    }
 
 `
 
@@ -77,24 +85,40 @@ const Formulario_login = styled.form`
  //test
 
 `
-export const Bloco = () => {
-  return (
-    <QuadradoLogin>
-        <Bloco_Titulo>
-        <Titulo_Login>LOGIN</Titulo_Login>
-        </Bloco_Titulo>
-        <Bloco_inputs>
-            <Formulario_login>
-                <Inputs_login placeholder='CPF'/>
-                <Inputs_login placeholder='SENHA'/>
-                <Bloco_Btn>
-                    <Button_Login>LOGAR</Button_Login>
-                    <Button_Login>REGISTRAR</Button_Login>
 
-                </Bloco_Btn>
-            </Formulario_login>
-       
-        </Bloco_inputs>
-    </QuadradoLogin>
-  )
+const Bloco_logo =styled.div`
+    display: flex;
+    justify-content: center;
+`
+
+const Logo = styled.img`
+    @media(max-width: 430px){
+        width: 200px;
+    }
+`
+
+
+export const Bloco = () => {
+    return (
+        <QuadradoLogin>
+            <Bloco_logo>
+                <Logo src={bank_logo} />
+            </Bloco_logo>
+            <Bloco_Titulo>
+                <Titulo_Login>LOGIN</Titulo_Login>
+            </Bloco_Titulo>
+            <Bloco_inputs>
+                <Formulario_login>
+                    <Inputs_login placeholder='CPF' />
+                    <Inputs_login placeholder='SENHA' />
+                    <Bloco_Btn>
+                        <Button_Login>LOGAR</Button_Login>
+                        <Button_Login>REGISTRAR</Button_Login>
+
+                    </Bloco_Btn>
+                </Formulario_login>
+
+            </Bloco_inputs>
+        </QuadradoLogin>
+    )
 }

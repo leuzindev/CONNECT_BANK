@@ -8,9 +8,6 @@ import img4 from '../../assets/images/img4.png'
 import img5 from '../../assets/images/img5.png'
 import img6 from '../../assets/images/img6.png'
 
-const images = [img1, img2, img3, img4, img5, img6]
-const campos = ["Carteira", "Cartão", "Receber", "Sacar", "PIX", "Fatura"]
-
 const Bola = styled.div`
     background-color: #41D3BE;
     min-width: 100%;
@@ -27,10 +24,10 @@ const Bola = styled.div`
         transform: scale(.9);
     }
     @media (max-width: 550px){
-        width: 25px;
-        height: 25px;
+        min-width: 30px;
+        min-height: 30px;
         flex-wrap: wrap;
-        
+        margin: 3px;
        
     }
     
@@ -65,6 +62,11 @@ const Descricao = styled.p`
     font-size: 15px;
     margin-bottom: 5px;
     font-family: 'Jockey One', sans-serif;
+    @media (max-width: 550px){
+        font-size: 13px;
+        margin: 2px;
+       
+    }
 `
 const Circulo_pix = () => {
     return (
