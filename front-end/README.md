@@ -2,8 +2,7 @@
 # # CONNECT BANK
 
 
-![home]()
-
+![home](https://user-images.githubusercontent.com/97266637/200198631-cbdf451b-fd4a-4955-a897-7c3c9c19264c.png)
 
 ---
 
@@ -69,21 +68,23 @@ antes da codificação foi feito a criação de todas as telas no Figma, ferrame
 
 1 - Login
 
-
+![Captura de tela de 2022-11-06 19-27-01](https://user-images.githubusercontent.com/97266637/200198683-77eeda17-bb79-4eae-859c-69c38e5f182a.png)
 
 2 - Cadastro
 
+![Captura de tela de 2022-11-06 19-27-10](https://user-images.githubusercontent.com/97266637/200198695-2ff291d9-85c3-485a-bdfa-656c4cc1413a.png)
 
+3- Home
 
-3 - Sua Conta
+![Captura de tela de 2022-11-06 19-28-09](https://user-images.githubusercontent.com/97266637/200198703-f855c23b-8d32-4763-aaad-ec9be7bd1644.png)
 
+4 - Sua Conta
 
+![Captura de tela de 2022-11-06 19-27-33](https://user-images.githubusercontent.com/97266637/200198705-1ee48762-20d8-4ad8-9a71-aa6eae740bbb.png)
 
-4 - Área Pix
+5 - Área Pix
 
-
-
-5 - Historico e Fatura
+![Captura de tela de 2022-11-06 19-27-19](https://user-images.githubusercontent.com/97266637/200198714-e59c0e6a-dda4-47e4-b236-2b687253f0ff.png)
 
 
 
