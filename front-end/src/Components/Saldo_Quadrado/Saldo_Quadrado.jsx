@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-import Conta_pix from '../../Components/Conta_pix/index'
+import Conta_pix from '../Conta_pix/index'
 
 
 const Conteudo = styled.section`

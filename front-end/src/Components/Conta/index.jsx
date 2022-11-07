@@ -13,7 +13,7 @@ import {
   Saldo,
   Detalhe,
   IconeTema,
-} from "../../Components/UI";
+} from "../UI";
 
 const IconeMargin = styled(Icone)`
   margin-top: 2px;

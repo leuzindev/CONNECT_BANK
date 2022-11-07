@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Botao } from "../../Components/UI";
+import { Box, Botao } from "../UI";
 import { extratoLista } from "../../info";
 import Items from "../Items";
 

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import {useForm} from 'react-hook-form'
 
 import bank_logo from '../../assets/images/logo_nav.png'
 import btn_voltar from '../../assets/images/btn_retornar.png'
+
+import api from '../../api.js'
+import Axios from 'axios'
 
 const Bloco_Formulario = styled.div`
     
@@ -102,26 +106,43 @@ const Logo = styled.img`
 `
 
 const Formulario_Cad = () => {
+
+    const {register, handleSubmit} = useForm();
+
+    const pegaDados = (e) => {
+        Axios.post('http://localhost:3080/users', {
+            name: e.name,
+            email: e.email,
+            password: e.password
+        }).then((response) => {
+            console.log(response)
+        })
+    }
+
     return (
         <Bloco_Formulario>
-            <Formulario_Register>
+            <Formulario_Register onSubmit={handleSubmit(pegaDados)}>
                 <Bloco_logo>
                     <Logo src={bank_logo} />
                 </Bloco_logo>
                 <Bloco_titulo>
                     <Titulo>Registro</Titulo>
                 </Bloco_titulo>
-                <Input_registro placeholder='Nome'></Input_registro>
-                <Input_registro placeholder='E-mail'></Input_registro>
-                <Input_registro placeholder='Senha'></Input_registro>
-                <Input_registro placeholder='Senha Novamente'></Input_registro>
+                <Input_registro {...register("name")} placeholder='Nome'></Input_registro>
+                <Input_registro {...register("email")}type="email" placeholder='E-mail'></Input_registro>
+                <Input_registro {...register("password")} type="password" placeholder='Senha'></Input_registro>
+                <Input_registro {...register("password2")} type="password" placeholder='Senha Novamente'></Input_registro>
                 <Bloco_btn>
-                    <Btn_registro>CADASTRAR</Btn_registro>
+                    <Btn_registro >CADASTRAR</Btn_registro>
                     <Btn_Voltar src={btn_voltar} />
                 </Bloco_btn>
             </Formulario_Register>
         </Bloco_Formulario>
     )
+
+
 }
+
+
 
 export default Formulario_Cad
